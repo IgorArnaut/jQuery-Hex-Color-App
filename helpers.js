@@ -16,7 +16,7 @@ function getHexColor() {
 }
 
 function changeColor() {
-  let hex = getHexColor();
+  const hex = getHexColor();
   body.css({ "background-color": hex });
   color.text(hex);
 }
