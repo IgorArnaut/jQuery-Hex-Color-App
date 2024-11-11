@@ -1,6 +1,7 @@
+import $ from "jquery";
 import { changeColor } from "./helpers.js";
 
-window.addEventListener("load", () => {
+$(window).on("load", () => {
   changeColor();
-  document.getElementById("btn").addEventListener("click", () => changeColor());
+  $("#btn").on("click", () => changeColor());
 });
