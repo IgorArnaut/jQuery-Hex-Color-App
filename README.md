@@ -1,2 +1,2 @@
 # jQuery Hex Color App
-A jQuery hex color application.
+ A jQuery hex color application.
