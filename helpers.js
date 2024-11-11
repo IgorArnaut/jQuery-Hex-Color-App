@@ -4,7 +4,7 @@ const chars = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", 
 const color = $("#color");
 const body = $("body");
 
-function changeColor() {
+function getHexColor() {
   let hex = "#";
 
   for (let i = 0; i < 6; i++) {
@@ -12,7 +12,11 @@ function changeColor() {
     hex += char;
   }
 
-  console.log(hex);
+  return hex;
+}
+
+function changeColor() {
+  let hex = getHexColor();
   body.css({ "background-color": hex });
   color.text(hex);
 }
